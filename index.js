@@ -6,6 +6,7 @@
 */
 
 
+
 /**
  * ### Challenge `getName`
  * Example ✅
@@ -76,7 +77,6 @@ function getVehiclesCostInCreditsSumTotal(character) {
   return count;
 }
 
-
 /**
  * ### Challenge `getStarshipPassengerAndCrewSumTotal`
  * MVP Challenge 🤓
@@ -108,16 +108,14 @@ function getStarshipPassengerAndCrewSumTotal(character) {
  * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
  */
 function getNthFilm(character, filmNumber) {
-   for(let i=0; i< character.films.length; i++) {
-     if(filmNumber > 4) {
-        return 'There are only 3 Star Wars movies. Flan fiction excluded.'
-     } else {
-       return `${character.films[filmNumber -1]}`
-     }
-   }
- }
- 
-
+  for (let i = 0; i < character.films.length; i++) {
+    if (filmNumber > 4) {
+      return "There are only 3 Star Wars movies. Flan fiction excluded.";
+    } else {
+      return `${character.films[filmNumber - 1]}`;
+    }
+  }
+}
 
 /**
  * ### Challenge `getCargoCapacityTotal`
@@ -130,17 +128,17 @@ function getNthFilm(character, filmNumber) {
  * Sample data expected output: 80124
  */
 function getCargoCapacityTotal(character) {
-  const totalVehicles = character.vehicles.reduce((totalValue, currentValue) => {
+  let totalVehicles = character.vehicles.reduce((totalValue, currentValue) => {
     return totalValue + parseInt(currentValue.cargo_capacity);
   }, 0);
 
-  const totalStarships = character.starships.reduce((totalItems, currentItem) => {
+  let totalStarships = character.starships.reduce((totalItems, currentItem) => {
     return totalItems + parseInt(currentItem.cargo_capacity);
   }, 0);
 
-    return totalVehicles + totalStarships;
-
+  return totalStarships + totalVehicles;
 }
+
 
 /**
  * ### Challenge `getFastestStarshipName`
@@ -153,12 +151,7 @@ function getCargoCapacityTotal(character) {
  *
  * Sample data expected output: `X-wing`
  */
-function getFastestStarshipName(character) {
-
-
-  }
-  
-
+function getFastestStarshipName(character) {}
 
 /**
  * ### Challenge `getLargestCargoStarshipModelName`
@@ -171,7 +164,7 @@ function getFastestStarshipName(character) {
  *
  * Sample data expected output: `Lambda-class T-4a shuttle`
  */
-
+function getLargestCargoStarshipModelName(character) {}
 /**
  * ### Challenge `getSlowestVehicleOrStarshipName`
  *Stretch Goal 💪
@@ -182,7 +175,7 @@ function getFastestStarshipName(character) {
  * If the character does not have any starships or vehicles, then return string 'none'.
  *
  */
-function getSlowestVehicleOrStarshipName(character) {
+function getSlodwestVehicleOrStarshipName(character) {
   // TODO: Add your code here.
 }
 
