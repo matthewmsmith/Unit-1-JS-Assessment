@@ -29,7 +29,7 @@
       "max_atmosphering_speed": "85",
       "crew": 1,
       "passengers": 2,
-      "cargo_capacity": "1600"
+     "cargo_capacity": "1600"
     }
   ],
   "starships": [

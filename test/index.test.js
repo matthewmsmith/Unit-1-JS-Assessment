@@ -10,7 +10,7 @@ if (typeof exports !== 'undefined') {
   var lukeSkywalker = require('../data/person-1.json')
   var leiaOrgana = require('../data/person-5.json')
   var obiWanKenobi = require('../data/person-10.json')
-
+  
   var chai = require('chai')
   var {
     getName,
